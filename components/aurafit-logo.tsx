@@ -1,29 +1,112 @@
 export default function AuraFitLogo() {
   return (
-    <svg viewBox="0 0 100 100" className="h-12 w-12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Outer circle */}
-      <circle cx="50" cy="50" r="48" stroke="#0d9488" strokeWidth="2" />
+    <svg viewBox="0 0 200 200" className="h-12 w-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Outer circle - thin border */}
+      <circle cx="100" cy="100" r="95" stroke="#26C6A9" strokeWidth="1.5" />
 
-      {/* Inner stylized "A" with geometric design */}
-      <g transform="translate(50, 50)">
-        {/* Left diagonal line */}
-        <line x1="-12" y1="8" x2="0" y2="-15" stroke="#0d9488" strokeWidth="2.5" strokeLinecap="round" />
-        {/* Right diagonal line */}
-        <line x1="12" y1="8" x2="0" y2="-15" stroke="#0d9488" strokeWidth="2.5" strokeLinecap="round" />
-        {/* Horizontal crossbar */}
-        <line x1="-6" y1="-2" x2="6" y2="-2" stroke="#0d9488" strokeWidth="2.5" strokeLinecap="round" />
+      {/* Fashion Icons arranged in a circle */}
 
-        {/* Decorative dot accent */}
-        <circle cx="0" cy="12" r="2.5" fill="#0d9488" />
+      {/* Top - Sneaker (thin line style) */}
+      <g transform="translate(100, 20)">
+        <path
+          d="M -12 8 Q -8 2 0 0 Q 8 2 12 8 L 12 14 Q 8 16 0 16 Q -8 16 -12 14 Z M -10 8 L 10 8"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </g>
 
-      {/* Small accent stars for premium feel */}
-      <g fill="#0d9488" opacity="0.8">
-        {/* Top accent */}
-        <circle cx="50" cy="8" r="1.5" />
-        {/* Bottom accent */}
-        <circle cx="50" cy="92" r="1.5" />
+      {/* Top Right - Sports Bra (thin line) */}
+      <g transform="translate(155, 45)">
+        <path
+          d="M -10 0 Q -12 4 -10 8 L 10 8 Q 12 4 10 0 Z M -6 8 L -6 14 M 6 8 L 6 14"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </g>
+
+      {/* Right - Hoodie/Jacket (thin line) */}
+      <g transform="translate(170, 100)">
+        <path
+          d="M -12 0 L -12 16 Q -8 18 0 18 Q 8 18 12 16 L 12 0 M -4 0 L -6 8 M 4 0 L 6 8 M -2 4 L 2 4"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+
+      {/* Bottom Right - Heels (thin line) */}
+      <g transform="translate(145, 160)">
+        <path
+          d="M -14 4 L -10 16 L -8 16 L -12 4 M 0 4 L 4 16 L 6 16 L 2 4"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+
+      {/* Bottom - Dress/Gown (thin line) */}
+      <g transform="translate(100, 175)">
+        <path
+          d="M -10 0 L -10 6 Q -10 8 -8 10 L -4 16 L 4 16 L 8 10 Q 10 8 10 6 L 10 0 Z M -8 2 L 8 2"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+
+      {/* Bottom Left - Handbag (thin line) */}
+      <g transform="translate(55, 160)">
+        <path
+          d="M -12 2 Q -14 0 -10 0 L 10 0 Q 14 0 12 2 L 12 12 Q 10 14 0 14 Q -10 14 -12 12 Z M -8 2 L 8 2 M -6 0 L -6 -4 M 6 0 L 6 -4"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+
+      {/* Left - Hanger/Clothing (thin line) */}
+      <g transform="translate(30, 100)">
+        <path
+          d="M -8 0 Q -10 0 -10 2 L -10 14 Q -8 16 0 16 L 0 16 Q 8 16 10 14 L 10 2 Q 10 0 8 0 M -6 2 L 6 2 M -2 0 L -2 -4 L 2 -4 L 2 0"
+          stroke="#26C6A9"
+          strokeWidth="1.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+
+      {/* Top Left - Accessories/Earring (thin line) */}
+      <g transform="translate(45, 45)">
+        <circle cx="-4" cy="4" r="3" stroke="#26C6A9" strokeWidth="1.2" />
+        <circle cx="4" cy="4" r="3" stroke="#26C6A9" strokeWidth="1.2" />
+        <line x1="-4" y1="7" x2="-4" y2="12" stroke="#26C6A9" strokeWidth="1.2" strokeLinecap="round" />
+        <line x1="4" y1="7" x2="4" y2="12" stroke="#26C6A9" strokeWidth="1.2" strokeLinecap="round" />
+      </g>
+
+      {/* Center text - AURAFIT */}
+      <text
+        x="100"
+        y="108"
+        textAnchor="middle"
+        fontSize="18"
+        fontWeight="600"
+        fill="#26C6A9"
+        fontFamily="'Playfair Display', serif"
+        letterSpacing="2"
+      >
+        AURAFIT
+      </text>
+
+      {/* Decorative minimal line beneath text */}
+      <line x1="60" y1="118" x2="140" y2="118" stroke="#26C6A9" strokeWidth="0.8" opacity="0.6" />
     </svg>
   )
 }
