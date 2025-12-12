@@ -14,15 +14,12 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <AuraFitLogo />
           <span
-            className="hidden text-3xl font-black tracking-[0.25em] sm:inline"
+            className="hidden text-3xl font-bold tracking-wider sm:inline"
             style={{
               background: "linear-gradient(135deg, #0d9488 0%, #06b6d4 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-              fontFamily: "'Playfair Display', serif",
-              fontWeight: 700,
-              letterSpacing: "0.25em",
             }}
           >
             AURAFIT
@@ -34,7 +31,7 @@ export default function Header() {
             <Link
               key={item}
               href="#"
-              className="text-sm font-light tracking-wide text-foreground hover:text-[#0d9488] transition-colors"
+              className="text-sm font-medium tracking-wide text-foreground hover:text-[#0d9488] transition-colors"
             >
               {item}
             </Link>

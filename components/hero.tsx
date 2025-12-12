@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 
 const slideShowImages = [
@@ -27,6 +28,7 @@ const slideShowImages = [
 ]
 
 export default function Hero() {
+  const router = useRouter()
   const [currentSlide, setCurrentSlide] = useState(0)
   const [imageLoaded, setImageLoaded] = useState(false)
 
@@ -68,6 +70,7 @@ export default function Hero() {
 
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
               <button
+                onClick={() => router.push('/face-scan')}
                 className="flex items-center justify-center gap-2 rounded-2xl px-8 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 style={{ backgroundColor: "#0d9488" }}
               >
